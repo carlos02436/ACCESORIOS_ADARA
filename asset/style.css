@@ -31,14 +31,31 @@ body {
 }
 
 footer {
+    position: relative;
     background-image: url(../img/footer.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto; /* Hace que ocupe todo el ancho */
-    background-position: center; /* Centra la imagen horizontalmente */
+    background-size: 100% auto;
+    background-position: center;
     color: white;
     padding: 20px 0;
+    z-index: 1;
 }
 
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Nivel de oscurecimiento */
+    z-index: -1;
+}
+
+.img_2 {
+  filter: drop-shadow(0 0 10px white); /* Brillo blanco */
+  transition: filter 0.3s ease;
+}
 
 .img {
     width: auto;
@@ -163,9 +180,74 @@ footer {
 }
 
 .testimonios-bg {
-  background-image: url(../img/logo1.png); /* Ruta a tu imagen */
+  background-image: url(../img/testimonios.jpg); /* Ruta a tu imagen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white; /* Asegura contraste */
+  width: 100%;
+  height: 25rem;
 }
+
+/* Ajuste de secciones en pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+        font-size: 1rem;
+    }
+
+    .img {
+        height: 300px; /* Ajuste de altura en móviles */
+        width: 100%;
+    }
+
+    .img-productos {
+        height: 200px;
+        border-radius: 40px;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .a_nabvar {
+        font-size: 0.9rem;
+    }
+
+    .testimonios-bg {
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+}
+
+/* Ajuste adicional para pantallas aún más pequeñas */
+@media (max-width: 576px) {
+    .hero {
+        padding: 40px 10px;
+    }
+
+    .img {
+        height: 250px;
+    }
+
+    .img-productos {
+        height: 180px;
+    }
+
+    .a_nabvar {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        background-size: cover;
+        text-align: center;
+    }
+}
+
+/* Ajuste general de texto para evitar que se salga */
+* {
+    word-wrap: break-word;
+}
+
