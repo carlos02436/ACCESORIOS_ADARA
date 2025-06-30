@@ -2,37 +2,11 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-image: url(../img/fondo1.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-    min-height: 100vh;
-    min-width: 100vw;
+    background-attachment: fixed;/* Hace que la imagen quede fija al hacer scroll */
+    background-size: 100%;/* Reduce el tamaño visual de la imagen */
+    background-position: center center;/* Centra la imagen */
 }
 
-/* Responsive background for mobile devices */
-@media (max-width: 768px) {
-    body {
-        background-attachment: scroll;
-        /* Prevents issues on mobile */
-        background-size: cover;
-        background-position: center center;
-    }
-}
-
-/* Estilos Imágenes del Carrusel */
-.carrusel-img {
-    height: 420px;
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .carrusel-img {
-        height: 220px;
-    }
-}
-
-/* Estilos hero y todo el Documento */
-.carrusel */
 .hero {
 
     background-size: cover;
@@ -74,44 +48,42 @@ footer::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Nivel de oscurecimiento */
+    background-color: rgba(0, 0, 0, 0.5); /* Nivel de oscurecimiento */
     z-index: -1;
 }
 
 .img_2 {
-    filter: drop-shadow(0 0 10px white);
-    /* Brillo blanco */
-    transition: filter 0.3s ease;
+  filter: drop-shadow(0 0 10px white); /* Brillo blanco */
+  transition: filter 0.3s ease;
+}
+
+.img {
+    width: auto;
+    height: 700px;/* Puedes ajustar esta altura según lo que necesites */
+    object-fit: cover;
+    object-position: center;
 }
 
 .img-productos {
     width: auto;
-    height: 300px;
-    /* Puedes ajustar esta altura según lo que necesites */
+    height: 300px;/* Puedes ajustar esta altura según lo que necesites */
     object-fit: cover;
     object-position: center;
     transition: all 0.3s ease-in-out;
     transform-style: preserve-3d;
-    border-radius: 80px;
-    /* Bordes redondeados */
+    border-radius: 80px;/* Bordes redondeados */
 }
 
 .img-productos:hover {
-    transform: scale3d(1.03, 1.03, 1.03) rotateZ(-2deg);
-    /* Escala e inclinación */
+    transform: scale3d(1.03, 1.03, 1.03) rotateZ(-2deg);/* Escala e inclinación */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .glass-navbar {
-    background: rgba(0, 0, 0, 0.15);
-    /* Fondo blanco con transparencia */
-    backdrop-filter: blur(10px);
-    /* Difuminado de fondo */
-    -webkit-backdrop-filter: blur(10px);
-    /* Soporte Safari */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    /* Borde inferior sutil */
+    background: rgba(0, 0, 0, 0.15);/* Fondo blanco con transparencia */
+    backdrop-filter: blur(10px);/* Difuminado de fondo */
+    -webkit-backdrop-filter: blur(10px);/* Soporte Safari */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);/* Borde inferior sutil */
     transition: all 0.3s ease-in-out;
 }
 
@@ -121,15 +93,13 @@ footer::before {
     font-weight: bold;
     letter-spacing: 1px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: none;
-    /* Quitamos subrayado por defecto */
+    text-decoration: none;/* Quitamos subrayado por defecto */
 }
 
 .a_nabvar::after {
     content: "";
     position: absolute;
-    bottom: -1px;
-    /* Separación debajo del texto */
+    bottom: -1px;/* Separación debajo del texto */
     left: 50%;
     width: 0;
     height: 2px;
@@ -210,13 +180,11 @@ footer::before {
 }
 
 .testimonios-bg {
-    background-image: url(../img/testimonios.jpg);
-    /* Ruta a tu imagen */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    /* Asegura contraste */
-    width: 100%;
-    height: 25rem;
+  background-image: url(../img/testimonios.jpg); /* Ruta a tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Asegura contraste */
+  width: 100%;
+  height: 25rem;
 }
