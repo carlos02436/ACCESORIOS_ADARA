@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body loading="lazy">
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top glass-navbar">
         <div class="container">
             <a class="navbar-brand animate__animated animate__backInDown a">
-                <img src="img/logo2.png" style="height:80px; width:auto;" alt="" class="img_2">
+                <img loading="lazy" src="img/logo2.png" style="height:80px; width:auto;" alt="" class="img_2">
                 Accesorios Adara
             </a>
 
@@ -45,45 +45,46 @@
     <!-- CARRUSEL DE IMÁGENES -->
     <div id="carruselAdara" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carruselAdara" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#carruselAdara" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carruselAdara" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carruselAdara" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselAdara" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carruselAdara" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carruselAdara" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/chancla1.jpg" class="d-block w-100 img" alt="Accesorios Adara 1">
+                <img loading="lazy" src="img/chancla1.jpg" class="d-block w-100 carrusel-img" alt="Accesorios Adara 1">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Descubre tu estilo</h5>
                     <p>Con piezas que marcan tendencia</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/chancla2.jpg" class="d-block w-100 img" alt="Accesorios Adara 2">
+                <img loading="lazy" src="img/chancla2.jpg" class="d-block w-100 carrusel-img" alt="Accesorios Adara 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Diseños exclusivos</h5>
                     <p>Inspirados en ti</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/chancla3.jpg" class="d-block w-100 img" alt="Accesorios Adara 3">
+                <img loading="lazy" src="img/chancla3.jpg" class="d-block w-100 carrusel-img" alt="Accesorios Adara 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Accesorios con alma</h5>
                     <p>Haz de cada detalle algo especial</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/chancla4.jpg" class="d-block w-100 img" alt="Accesorios Adara 3">
+                <img loading="lazy" src="img/chancla4.jpg" class="d-block w-100 carrusel-img" alt="Accesorios Adara 4">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Accesorios con alma</h5>
                     <p>Haz de cada detalle algo especial</p>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carruselAdara" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselAdara" data-bs-slide="prev" aria-label="Anterior">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carruselAdara" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselAdara" data-bs-slide="next" aria-label="Siguiente">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
     </div>
 
@@ -91,7 +92,7 @@
     <section id="nosotros" class="container my-5" style="scroll-margin-top: 100px;">
         <div class="row align-items-center">
             <div class="col-md-6 mb-4 mb-md-0">
-                <img src="img/logo2.png" alt="Logo Accesorios Adara" class="img-fluid rounded-pill shadow logo img_2"
+                <img loading="lazy" src="img/logo2.png" alt="Logo Accesorios Adara" class="img-fluid rounded-pill shadow logo img_2"
                     style="border-radius: 100px;height: 350px;width: 350px;">
             </div>
             <div class="col-md-6 text-color">
@@ -160,7 +161,7 @@
     <section class="hero position-relative overflow-hidden" id="inicio">
         <!-- Video de fondo -->
         <video autoplay muted loop playsinline class="position-absolute w-100 hero_video">
-            <source src="img/video1.mp4" type="video/mp4">
+            <source loading="lazy" src="img/video1.mp4" type="video/mp4">
         </video>
 
         <!-- Contenido superpuesto -->
@@ -180,7 +181,7 @@
             <!-- Tarjeta 1 -->
             <div class="col-12 col-sm-6 col-lg-4 d-flex">
                 <div class="card shadow-sm p-3 w-100 producto-card">
-                    <img src="img/chancla1.jpg" class="card-img-top producto-img" alt="Chanclas Florales">
+                    <img loading="lazy" src="img/chancla1.jpg" class="card-img-top producto-img" alt="Chanclas Florales">
                     <div class="card-body shadow" style="border-radius: 10px;">
                         <h5 class="card-title">Chanclas Florales</h5>
                         <p class="card-text">Chanclas decoradas a mano con flores en tonos pastel. Elegancia artesanal
@@ -205,7 +206,7 @@
             <!-- Tarjeta 2 -->
             <div class="col-12 col-sm-6 col-lg-4 d-flex">
                 <div class="card shadow-sm p-3 w-100 producto-card">
-                    <img src="img/chancla2.jpg" class="card-img-top producto-img" alt="Chanclas con Encaje">
+                    <img loading="lazy" src="img/chancla2.jpg" class="card-img-top producto-img" alt="Chanclas con Encaje">
                     <div class="card-body shadow" style="border-radius: 10px;">
                         <h5 class="card-title">Chanclas con Encaje</h5>
                         <p class="card-text">Diseño romántico con detalles en encaje blanco. Ideal para ocasiones
@@ -230,7 +231,7 @@
             <!-- Tarjeta 3 -->
             <div class="col-12 col-sm-6 col-lg-4 d-flex">
                 <div class="card shadow-sm p-3 w-100 producto-card">
-                    <img src="img/chancla3.jpg" class="card-img-top producto-img" alt="Chanclas Tropicales">
+                    <img loading="lazy" src="img/chancla3.jpg" class="card-img-top producto-img" alt="Chanclas Tropicales">
                     <div class="card-body shadow" style="border-radius: 10px;">
                         <h5 class="card-title">Chanclas Tropicales</h5>
                         <p class="card-text">Chanclas con decoración tropical y colores vibrantes. Perfectas para el
@@ -255,7 +256,7 @@
             <!-- Tarjeta 4 -->
             <div class="col-12 col-sm-6 col-lg-4 d-flex">
                 <div class="card shadow-sm p-3 w-100 producto-card">
-                    <img src="img/chancla4.jpg" class="card-img-top producto-img" alt="Chanclas Elegancia Nocturna">
+                    <img loading="lazy" src="img/chancla4.jpg" class="card-img-top producto-img" alt="Chanclas Elegancia Nocturna">
                     <div class="card-body shadow" style="border-radius: 10px;">
                         <h5 class="card-title">Elegancia Nocturna</h5>
                         <p class="card-text">Chanclas negras con pedrería brillante. Un toque de glamour para tus noches
@@ -280,7 +281,7 @@
             <!-- Tarjeta 5 -->
             <div class="col-12 col-sm-6 col-lg-4 d-flex">
                 <div class="card shadow-sm p-3 w-100 producto-card">
-                    <img src="img/chancla5.jpg" class="card-img-top producto-img" alt="Chanclas Bohemia">
+                    <img loading="lazy" src="img/chancla5.jpg" class="card-img-top producto-img" alt="Chanclas Bohemia">
                     <div class="card-body shadow" style="border-radius: 10px;">
                         <h5 class="card-title">Estilo Bohemio</h5>
                         <p class="card-text">Chanclas con detalles étnicos y tejidos a mano. Un diseño único que resalta
@@ -305,7 +306,7 @@
             <!-- Tarjeta 6 -->
             <div class="col-12 col-sm-6 col-lg-4 d-flex">
                 <div class="card shadow-sm p-3 w-100 producto-card">
-                    <img src="img/chancla6.jpg" class="card-img-top producto-img" alt="Chanclas Naturaleza Viva">
+                    <img loading="lazy" src="img/chancla6.jpg" class="card-img-top producto-img" alt="Chanclas Naturaleza Viva">
                     <div class="card-body shadow" style="border-radius: 10px;">
                         <h5 class="card-title">Naturaleza Viva</h5>
                         <p class="card-text">Chanclas decoradas con motivos de hojas y flores tropicales. Inspiradas en
@@ -362,7 +363,7 @@
                     <!-- Testimonio 1 -->
                     <div class="carousel-item active">
                         <div class="text-center">
-                            <img src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
+                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
                                 alt="Cliente 1">
                             <h5>María López</h5>
                             <p class="text-white">Cliente frecuente</p>
@@ -374,7 +375,7 @@
                     <!-- Testimonio 2 -->
                     <div class="carousel-item">
                         <div class="text-center">
-                            <img src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
+                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
                                 alt="Cliente 2">
                             <h5>Ana Rodríguez</h5>
                             <p class="text-white">Emprendedora</p>
@@ -386,7 +387,7 @@
                     <!-- Testimonio 3 -->
                     <div class="carousel-item">
                         <div class="text-center">
-                            <img src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
+                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
                                 alt="Cliente 3">
                             <h5>Juliana Gómez</h5>
                             <p class="text-white">Diseñadora de moda</p>
@@ -398,7 +399,7 @@
                     <!-- Testimonio 4 -->
                     <div class="carousel-item">
                         <div class="text-center">
-                            <img src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
+                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
                                 alt="Cliente 4">
                             <h5>Daniela Méndez</h5>
                             <p class="text-white">Influencer de moda</p>
@@ -410,7 +411,7 @@
                     <!-- Testimonio 5 -->
                     <div class="carousel-item">
                         <div class="text-center">
-                            <img src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
+                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
                                 alt="Cliente 5">
                             <h5>Camila Torres</h5>
                             <p class="text-white">Compradora online</p>
@@ -471,7 +472,7 @@
                 <!-- Logo y descripción -->
                 <div class="col-md-4">
                     <div class="mb-3">
-                        <img src="img/logo2.png" alt="Accesorios Adara Logo" style="width:60px; height:60px;"
+                        <img loading="lazy" src="img/logo2.png" alt="Accesorios Adara Logo" style="width:60px; height:60px;"
                             class="mb-2 rounded-circle">
                     </div>
                     <p>
