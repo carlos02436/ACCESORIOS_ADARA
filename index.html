@@ -33,7 +33,7 @@
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link a_nabvar" href="#carruselAdara">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link a_nabvar" href="#nosotros">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link a_nabvar" href="#productos">Productos</a></li>                    
+                    <li class="nav-item"><a class="nav-link a_nabvar" href="#productos">Productos</a></li>
                     <li class="nav-item"><a class="nav-link a_nabvar" href="#testimonios">Testimonios</a></li>
                     <li class="nav-item"><a class="nav-link a_nabvar" href="#contacto">Contacto</a></li>
                     <li class="nav-item"><a class="nav-link a_nabvar" href="#">Login</a></li>
@@ -43,55 +43,58 @@
     </nav>
 
     <!-- CARRUSEL DE IMÁGENES -->
-    <div id="carruselAdara" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carruselAdara" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#carruselAdara" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carruselAdara" data-bs-slide-to="2"></button>
+    <section id="carruselAdara" class="main"></section>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/chancla1.jpg" class="d-block w-100 img" alt="Chanclas Florales">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5><strong>Chanclas Florales</strong></h5>
+                        <p><em>Diseño artesanal con flores en tonos pastel. Elegancia y frescura para tu día a día.</em></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/chancla2.jpg" class="d-block w-100 img" alt="Chanclas con Encaje">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5><strong>Chanclas con Encaje</strong></h5>
+                        <p><em>Románticas y delicadas, con detalles en encaje blanco. Perfectas para ocasiones especiales.</em></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/chancla3.jpg" class="d-block w-100 img" alt="Chanclas Tropicales">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5><strong>Chanclas Tropicales</strong></h5>
+                        <p><em>Colores vibrantes y decoración tropical. Ideales para el verano y días soleados.</em></p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img loading="lazy" src="img/chancla1.jpg" class="d-block w-100 img" alt="Accesorios Adara 1">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Descubre tu estilo</h5>
-                    <p>Con piezas que marcan tendencia</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img loading="lazy" src="img/chancla2.jpg" class="d-block w-100 img" alt="Accesorios Adara 2">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Diseños exclusivos</h5>
-                    <p>Inspirados en ti</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img loading="lazy" src="img/chancla3.jpg" class="d-block w-100 img" alt="Accesorios Adara 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Accesorios con alma</h5>
-                    <p>Haz de cada detalle algo especial</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img loading="lazy" src="img/chancla4.jpg" class="d-block w-100 img" alt="Accesorios Adara 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Accesorios con alma</h5>
-                    <p>Haz de cada detalle algo especial</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carruselAdara" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carruselAdara" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
+    </section>
 
     <!-- Sección Sobre Nosotros -->
-    <section id="nosotros" class="container my-5" style="scroll-margin-top: 100px;">
+    <section id="nosotros" class="container my-5" style="scroll-margin-top: 80px;">
         <div class="row align-items-center">
             <div class="col-md-6 mb-4 mb-md-0">
-                <img loading="lazy" src="img/logo2.png" alt="Logo Accesorios Adara" class="img-fluid rounded-pill shadow logo img_2"
+                <img loading="lazy" src="img/logo2.png" alt="Logo Accesorios Adara"
+                    class="img-fluid rounded-pill shadow logo img_2"
                     style="border-radius: 100px;height: 350px;width: 350px;">
             </div>
             <div class="col-md-6 text-color">
@@ -180,7 +183,8 @@
             <!-- Tarjeta 1 -->
             <div class="col-12 col-sm-6 col-lg-4 d-flex">
                 <div class="card shadow-sm p-3 w-100 producto-card">
-                    <img loading="lazy" src="img/chancla1.jpg" class="card-img-top producto-img" alt="Chanclas Florales">
+                    <img loading="lazy" src="img/chancla1.jpg" class="card-img-top producto-img"
+                        alt="Chanclas Florales">
                     <div class="card-body shadow" style="border-radius: 10px;">
                         <h5 class="card-title">Chanclas Florales</h5>
                         <p class="card-text">Chanclas decoradas a mano con flores en tonos pastel. Elegancia artesanal
@@ -205,7 +209,8 @@
             <!-- Tarjeta 2 -->
             <div class="col-12 col-sm-6 col-lg-4 d-flex">
                 <div class="card shadow-sm p-3 w-100 producto-card">
-                    <img loading="lazy" src="img/chancla2.jpg" class="card-img-top producto-img" alt="Chanclas con Encaje">
+                    <img loading="lazy" src="img/chancla2.jpg" class="card-img-top producto-img"
+                        alt="Chanclas con Encaje">
                     <div class="card-body shadow" style="border-radius: 10px;">
                         <h5 class="card-title">Chanclas con Encaje</h5>
                         <p class="card-text">Diseño romántico con detalles en encaje blanco. Ideal para ocasiones
@@ -230,7 +235,8 @@
             <!-- Tarjeta 3 -->
             <div class="col-12 col-sm-6 col-lg-4 d-flex">
                 <div class="card shadow-sm p-3 w-100 producto-card">
-                    <img loading="lazy" src="img/chancla3.jpg" class="card-img-top producto-img" alt="Chanclas Tropicales">
+                    <img loading="lazy" src="img/chancla3.jpg" class="card-img-top producto-img"
+                        alt="Chanclas Tropicales">
                     <div class="card-body shadow" style="border-radius: 10px;">
                         <h5 class="card-title">Chanclas Tropicales</h5>
                         <p class="card-text">Chanclas con decoración tropical y colores vibrantes. Perfectas para el
@@ -255,7 +261,8 @@
             <!-- Tarjeta 4 -->
             <div class="col-12 col-sm-6 col-lg-4 d-flex">
                 <div class="card shadow-sm p-3 w-100 producto-card">
-                    <img loading="lazy" src="img/chancla4.jpg" class="card-img-top producto-img" alt="Chanclas Elegancia Nocturna">
+                    <img loading="lazy" src="img/chancla4.jpg" class="card-img-top producto-img"
+                        alt="Chanclas Elegancia Nocturna">
                     <div class="card-body shadow" style="border-radius: 10px;">
                         <h5 class="card-title">Elegancia Nocturna</h5>
                         <p class="card-text">Chanclas negras con pedrería brillante. Un toque de glamour para tus noches
@@ -305,7 +312,8 @@
             <!-- Tarjeta 6 -->
             <div class="col-12 col-sm-6 col-lg-4 d-flex">
                 <div class="card shadow-sm p-3 w-100 producto-card">
-                    <img loading="lazy" src="img/chancla6.jpg" class="card-img-top producto-img" alt="Chanclas Naturaleza Viva">
+                    <img loading="lazy" src="img/chancla6.jpg" class="card-img-top producto-img"
+                        alt="Chanclas Naturaleza Viva">
                     <div class="card-body shadow" style="border-radius: 10px;">
                         <h5 class="card-title">Naturaleza Viva</h5>
                         <p class="card-text">Chanclas decoradas con motivos de hojas y flores tropicales. Inspiradas en
@@ -336,7 +344,7 @@
     </section>
 
     <!-- Sección Testimonios con Carrusel -->
-    <section id="testimonios" class="py-5 bg-light testimonios-bg" style="scroll-margin-top: 100px;">
+    <section id="testimonios" class="py-5 bg-light testimonios-bg" style="scroll-margin-top: 80px;">
         <div class="container">
             <h2 class="text-center fw-bold mb-5">Lo que dicen nuestros clientes</h2>
 
@@ -362,8 +370,8 @@
                     <!-- Testimonio 1 -->
                     <div class="carousel-item active">
                         <div class="text-center">
-                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
-                                alt="Cliente 1">
+                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100"
+                                height="100" alt="Cliente 1">
                             <h5>María López</h5>
                             <p class="text-white">Cliente frecuente</p>
                             <p class="px-3">"Me encantan los diseños artesanales de Accesorios Adara, son únicos y de
@@ -374,8 +382,8 @@
                     <!-- Testimonio 2 -->
                     <div class="carousel-item">
                         <div class="text-center">
-                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
-                                alt="Cliente 2">
+                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100"
+                                height="100" alt="Cliente 2">
                             <h5>Ana Rodríguez</h5>
                             <p class="text-white">Emprendedora</p>
                             <p class="px-3">"Gracias a sus accesorios, mis chanclas se ven con un toque único. ¡Súper
@@ -386,8 +394,8 @@
                     <!-- Testimonio 3 -->
                     <div class="carousel-item">
                         <div class="text-center">
-                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
-                                alt="Cliente 3">
+                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100"
+                                height="100" alt="Cliente 3">
                             <h5>Juliana Gómez</h5>
                             <p class="text-white">Diseñadora de moda</p>
                             <p class="px-3">"Accesorios Adara eleva cualquier outfit con sus detalles hechos a mano.
@@ -398,8 +406,8 @@
                     <!-- Testimonio 4 -->
                     <div class="carousel-item">
                         <div class="text-center">
-                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
-                                alt="Cliente 4">
+                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100"
+                                height="100" alt="Cliente 4">
                             <h5>Daniela Méndez</h5>
                             <p class="text-white">Influencer de moda</p>
                             <p class="px-3">"Cada pieza tiene un encanto especial. Ideal para resaltar en cualquier
@@ -410,8 +418,8 @@
                     <!-- Testimonio 5 -->
                     <div class="carousel-item">
                         <div class="text-center">
-                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100" height="100"
-                                alt="Cliente 5">
+                            <img loading="lazy" src="img/testimonio.png" class="rounded-circle mb-3" width="100"
+                                height="100" alt="Cliente 5">
                             <h5>Camila Torres</h5>
                             <p class="text-white">Compradora online</p>
                             <p class="px-3">"La atención es excelente y los envíos llegan rápido. ¡Estoy feliz con mis
@@ -424,12 +432,12 @@
                 <!-- Controles -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon rounded-circle p-2" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon rounded-circle p-2" aria-hidden="true"></span>
                     <span class="visually-hidden">Siguiente</span>
                 </button>
 
@@ -467,43 +475,46 @@
     <!-- Footer -->
     <footer class="bg-dark text-light pt-5 pb-3 mt-5">
         <div class="container">
-            <div class="row gy-4">
+            <div class="row gy-4 align-items-start">
                 <!-- Logo y descripción -->
-                <div class="col-md-4">
-                    <div class="mb-3">
-                        <img loading="lazy" src="img/logo2.png" alt="Accesorios Adara Logo" style="width:60px; height:60px;"
-                            class="mb-2 rounded-circle">
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <div class="d-flex align-items-center mb-3">
+                        <img loading="lazy" src="img/logo2.png" alt="Accesorios Adara Logo"
+                            style="width:60px; height:60px;" class="me-2 rounded-circle">
+                        <span class="fw-bold fs-5">Accesorios Adara</span>
                     </div>
-                    <p>
-                        <strong>Accesorios Adara</strong> crea adornos únicos para chanclas, elaborados a mano con amor
-                        y
-                        dedicación. Inspirados en la creatividad artesanal colombiana, llevamos estilo y personalidad a
-                        cada paso.
+                    <p class="mb-0">
+                        Crea adornos únicos para chanclas, elaborados a mano con amor y dedicación.<br>
+                        Inspirados en la creatividad artesanal colombiana, llevamos estilo y personalidad a cada paso.
                     </p>
                 </div>
 
                 <!-- Navegación rápida -->
-                <div class="col-md-4">
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <h5 class="fw-bold mb-3">Navegación</h5>
                     <ul class="list-unstyled">
-                        <li class="nav-item"><a class="nav-link" href="#carruselAdara">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                        <li><a class="nav-link px-0 text-light" href="#carruselAdara">Inicio</a></li>
+                        <li><a class="nav-link px-0 text-light" href="#nosotros">Nosotros</a></li>
+                        <li><a class="nav-link px-0 text-light" href="#productos">Productos</a></li>
+                        <li><a class="nav-link px-0 text-light" href="#testimonios">Testimonios</a></li>
+                        <li><a class="nav-link px-0 text-light" href="#contacto">Contacto</a></li>
+                        <li><a class="nav-link px-0 text-light" href="#">Login</a></li>
                     </ul>
                 </div>
 
                 <!-- Información de contacto -->
-                <div class="col-md-4">
+                <div class="col-12 col-md-4">
                     <h5 class="fw-bold mb-3">Contacto</h5>
-                    <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Valledupar, Cesar, Colombia</p>
-                    <p class="mb-1"><i class="bi bi-telephone-fill"></i> <a href="tel:+573001234567"
-                            class="text-light text-decoration-none">+57 300 123 4567</a></p>
-                    <p class="mb-1"><i class="bi bi-envelope-fill"></i> <a href="mailto:contacto@accesoriosadara.com"
-                            class="text-light text-decoration-none">contacto@accesoriosadara.com</a></p>
-                    <p class="mb-2"><i class="bi bi-clock-fill"></i> Lunes a Sábado, 9:00 am - 6:00 pm</p>
+                    <ul class="list-unstyled mb-2">
+                        <li class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Valledupar, Cesar, Colombia</li>
+                        <li class="mb-1"><i class="bi bi-telephone-fill me-2"></i>
+                            <a href="tel:+573001234567" class="text-light text-decoration-none">+57 300 123 4567</a>
+                        </li>
+                        <li class="mb-1"><i class="bi bi-envelope-fill me-2"></i>
+                            <a href="mailto:contacto@accesoriosadara.com" class="text-light text-decoration-none">contacto@accesoriosadara.com</a>
+                        </li>
+                        <li class="mb-1"><i class="bi bi-clock-fill me-2"></i>Lunes a Sábado, 9:00 am - 6:00 pm</li>
+                    </ul>
                     <div>
                         <a href="https://www.facebook.com/accesoriosadara" target="_blank"
                             class="me-2 text-decoration-none" title="Facebook">

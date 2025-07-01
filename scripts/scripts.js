@@ -43,3 +43,40 @@ document.body.style.backgroundRepeat = 'no-repeat';
 document.body.style.backgroundPosition = 'center center';
 document.body.style.minHeight = '100vh'; //Final de la función responsive
 
+// Imágenes del carrusel tipo grid
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselInner = document.querySelector('#carruselAdaraCarousel .carousel-inner');
+    const items = carouselInner.querySelectorAll('.carousel-item');
+    // Mostrar todas las imágenes (remover active y ocultar)
+    items.forEach(item => {
+        item.classList.add('active');
+        item.style.display = 'block';
+    });
+
+    // Los botones no cambian nada porque todas las imágenes están visibles
+    document.getElementById('carruselPrevBtn').onclick = function (e) { e.preventDefault(); };
+    document.getElementById('carruselNextBtn').onclick = function (e) { e.preventDefault(); };
+});
+
+// Pasar imágenes del carrusel una por una
+document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('#carruselAdaraCarousel');
+    if (!carousel) return;
+    const items = carousel.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+
+    // Oculta todas las imágenes excepto la primera
+    items.forEach((item, idx) => {
+        item.classList.remove('active');
+        item.style.display = idx === 0 ? 'block' : 'none';
+    });
+    items[0].classList.add('active');
+
+    setInterval(() => {
+        items[currentIndex].classList.remove('active');
+        items[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex + 1) % items.length;
+        items[currentIndex].classList.add('active');
+        items[currentIndex].style.display = 'block';
+    }, 3000); // Cambia cada 3 segundos
+});
